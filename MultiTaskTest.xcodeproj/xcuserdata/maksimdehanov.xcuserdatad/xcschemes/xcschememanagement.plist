@@ -9,10 +9,20 @@
 			<key>orderHint</key>
 			<integer>0</integer>
 		</dict>
+		<key>Task Widget.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
 		<key>3002690A1EA8D04C00FB54B4</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>306106341EACC42F00A04019</key>
 		<dict>
 			<key>primary</key>
 			<true/>

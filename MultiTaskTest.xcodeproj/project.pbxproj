@@ -9,25 +9,85 @@
 /* Begin PBXBuildFile section */
 		300269101EA8D04C00FB54B4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3002690F1EA8D04C00FB54B4 /* main.m */; };
 		300269131EA8D04C00FB54B4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 300269121EA8D04C00FB54B4 /* AppDelegate.m */; };
-		300269161EA8D04C00FB54B4 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 300269151EA8D04C00FB54B4 /* ViewController.m */; };
 		300269191EA8D04C00FB54B4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 300269171EA8D04C00FB54B4 /* Main.storyboard */; };
 		3002691C1EA8D04C00FB54B4 /* MultiTaskTest.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3002691A1EA8D04C00FB54B4 /* MultiTaskTest.xcdatamodeld */; };
 		3002691E1EA8D04C00FB54B4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3002691D1EA8D04C00FB54B4 /* Assets.xcassets */; };
 		300269211EA8D04C00FB54B4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3002691F1EA8D04C00FB54B4 /* LaunchScreen.storyboard */; };
+		3002692B1EA8E1B400FB54B4 /* TaskViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3002692A1EA8E1B400FB54B4 /* TaskViewController.m */; };
+		3002692F1EA8F14500FB54B4 /* TaskTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3002692E1EA8F14500FB54B4 /* TaskTableViewCell.m */; };
+		300269341EA8F1FB00FB54B4 /* Task.m in Sources */ = {isa = PBXBuildFile; fileRef = 300269331EA8F1FB00FB54B4 /* Task.m */; };
+		306106011EA9FDF600A04019 /* AddTaskViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 306106001EA9FDF600A04019 /* AddTaskViewController.m */; };
+		3061060D1EAA221900A04019 /* UITextField+isEmpty.m in Sources */ = {isa = PBXBuildFile; fileRef = 3061060C1EAA221900A04019 /* UITextField+isEmpty.m */; };
+		306106161EAA460B00A04019 /* CurrentTaskViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 306106151EAA460B00A04019 /* CurrentTaskViewController.m */; };
+		3061061D1EAB3F5B00A04019 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3061061C1EAB3F5B00A04019 /* CoreData.framework */; };
+		306106211EAB56DE00A04019 /* UIColor+MainColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 306106201EAB56DE00A04019 /* UIColor+MainColor.m */; };
+		306106241EAB587D00A04019 /* UITextField+makeBorder.m in Sources */ = {isa = PBXBuildFile; fileRef = 306106231EAB587D00A04019 /* UITextField+makeBorder.m */; };
+		306106271EACACB400A04019 /* CoreDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 306106261EACACB400A04019 /* CoreDataManager.m */; };
+		306106371EACC43000A04019 /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 306106361EACC43000A04019 /* NotificationCenter.framework */; };
+		3061063B1EACC43000A04019 /* TodayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3061063A1EACC43000A04019 /* TodayViewController.m */; };
+		3061063E1EACC43000A04019 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3061063C1EACC43000A04019 /* MainInterface.storyboard */; };
+		306106421EACC43000A04019 /* Task Widget.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 306106351EACC42F00A04019 /* Task Widget.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		306106401EACC43000A04019 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 300269031EA8D04C00FB54B4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 306106341EACC42F00A04019;
+			remoteInfo = "Task Widget";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		306106461EACC43000A04019 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				306106421EACC43000A04019 /* Task Widget.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		3002690B1EA8D04C00FB54B4 /* MultiTaskTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MultiTaskTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3002690F1EA8D04C00FB54B4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		300269111EA8D04C00FB54B4 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		300269121EA8D04C00FB54B4 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		300269141EA8D04C00FB54B4 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		300269151EA8D04C00FB54B4 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		300269181EA8D04C00FB54B4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3002691B1EA8D04C00FB54B4 /* MultiTaskTest.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MultiTaskTest.xcdatamodel; sourceTree = "<group>"; };
 		3002691D1EA8D04C00FB54B4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		300269201EA8D04C00FB54B4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		300269221EA8D04C00FB54B4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		300269291EA8E1B400FB54B4 /* TaskViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TaskViewController.h; sourceTree = "<group>"; };
+		3002692A1EA8E1B400FB54B4 /* TaskViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TaskViewController.m; sourceTree = "<group>"; };
+		3002692D1EA8F14500FB54B4 /* TaskTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TaskTableViewCell.h; sourceTree = "<group>"; };
+		3002692E1EA8F14500FB54B4 /* TaskTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TaskTableViewCell.m; sourceTree = "<group>"; };
+		300269321EA8F1FB00FB54B4 /* Task.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Task.h; sourceTree = "<group>"; };
+		300269331EA8F1FB00FB54B4 /* Task.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Task.m; sourceTree = "<group>"; };
+		306105FF1EA9FDF600A04019 /* AddTaskViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddTaskViewController.h; sourceTree = "<group>"; };
+		306106001EA9FDF600A04019 /* AddTaskViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddTaskViewController.m; sourceTree = "<group>"; };
+		3061060B1EAA221900A04019 /* UITextField+isEmpty.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextField+isEmpty.h"; sourceTree = "<group>"; };
+		3061060C1EAA221900A04019 /* UITextField+isEmpty.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextField+isEmpty.m"; sourceTree = "<group>"; };
+		306106141EAA460B00A04019 /* CurrentTaskViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CurrentTaskViewController.h; sourceTree = "<group>"; };
+		306106151EAA460B00A04019 /* CurrentTaskViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CurrentTaskViewController.m; sourceTree = "<group>"; };
+		3061061C1EAB3F5B00A04019 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		3061061F1EAB56DE00A04019 /* UIColor+MainColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+MainColor.h"; sourceTree = "<group>"; };
+		306106201EAB56DE00A04019 /* UIColor+MainColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+MainColor.m"; sourceTree = "<group>"; };
+		306106221EAB587D00A04019 /* UITextField+makeBorder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextField+makeBorder.h"; sourceTree = "<group>"; };
+		306106231EAB587D00A04019 /* UITextField+makeBorder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextField+makeBorder.m"; sourceTree = "<group>"; };
+		306106251EACACB400A04019 /* CoreDataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreDataManager.h; sourceTree = "<group>"; };
+		306106261EACACB400A04019 /* CoreDataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoreDataManager.m; sourceTree = "<group>"; };
+		306106351EACC42F00A04019 /* Task Widget.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Task Widget.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		306106361EACC43000A04019 /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
+		306106391EACC43000A04019 /* TodayViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TodayViewController.h; sourceTree = "<group>"; };
+		3061063A1EACC43000A04019 /* TodayViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TodayViewController.m; sourceTree = "<group>"; };
+		3061063D1EACC43000A04019 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		3061063F1EACC43000A04019 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,6 +95,15 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3061061D1EAB3F5B00A04019 /* CoreData.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		306106321EACC42F00A04019 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				306106371EACC43000A04019 /* NotificationCenter.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -45,7 +114,9 @@
 			isa = PBXGroup;
 			children = (
 				3002690D1EA8D04C00FB54B4 /* MultiTaskTest */,
+				306106381EACC43000A04019 /* Task Widget */,
 				3002690C1EA8D04C00FB54B4 /* Products */,
+				3061061B1EAB3F5A00A04019 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -53,6 +124,7 @@
 			isa = PBXGroup;
 			children = (
 				3002690B1EA8D04C00FB54B4 /* MultiTaskTest.app */,
+				306106351EACC42F00A04019 /* Task Widget.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -62,8 +134,12 @@
 			children = (
 				300269111EA8D04C00FB54B4 /* AppDelegate.h */,
 				300269121EA8D04C00FB54B4 /* AppDelegate.m */,
-				300269141EA8D04C00FB54B4 /* ViewController.h */,
-				300269151EA8D04C00FB54B4 /* ViewController.m */,
+				306106171EAB2E6000A04019 /* Manager */,
+				306106061EAA213B00A04019 /* Category */,
+				300269301EA8F1E000FB54B4 /* Model */,
+				300269281EA8E16C00FB54B4 /* TaskViewController */,
+				306105FE1EA9FDC900A04019 /* AddTaskViewController */,
+				306106131EAA45DD00A04019 /* CurrentTaskViewController */,
 				300269171EA8D04C00FB54B4 /* Main.storyboard */,
 				3002691D1EA8D04C00FB54B4 /* Assets.xcassets */,
 				3002691F1EA8D04C00FB54B4 /* LaunchScreen.storyboard */,
@@ -82,6 +158,126 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		300269281EA8E16C00FB54B4 /* TaskViewController */ = {
+			isa = PBXGroup;
+			children = (
+				3002692C1EA8F13100FB54B4 /* cell */,
+				300269291EA8E1B400FB54B4 /* TaskViewController.h */,
+				3002692A1EA8E1B400FB54B4 /* TaskViewController.m */,
+			);
+			name = TaskViewController;
+			sourceTree = "<group>";
+		};
+		3002692C1EA8F13100FB54B4 /* cell */ = {
+			isa = PBXGroup;
+			children = (
+				3002692D1EA8F14500FB54B4 /* TaskTableViewCell.h */,
+				3002692E1EA8F14500FB54B4 /* TaskTableViewCell.m */,
+			);
+			name = cell;
+			sourceTree = "<group>";
+		};
+		300269301EA8F1E000FB54B4 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				300269311EA8F1E800FB54B4 /* Task */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		300269311EA8F1E800FB54B4 /* Task */ = {
+			isa = PBXGroup;
+			children = (
+				300269321EA8F1FB00FB54B4 /* Task.h */,
+				300269331EA8F1FB00FB54B4 /* Task.m */,
+			);
+			name = Task;
+			sourceTree = "<group>";
+		};
+		306105FE1EA9FDC900A04019 /* AddTaskViewController */ = {
+			isa = PBXGroup;
+			children = (
+				306105FF1EA9FDF600A04019 /* AddTaskViewController.h */,
+				306106001EA9FDF600A04019 /* AddTaskViewController.m */,
+			);
+			name = AddTaskViewController;
+			sourceTree = "<group>";
+		};
+		306106061EAA213B00A04019 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				3061061E1EAB56CA00A04019 /* UIColor */,
+				3061060F1EAA3D7600A04019 /* makeBorder */,
+				3061060E1EAA3D6300A04019 /* isEmpty */,
+			);
+			name = Category;
+			sourceTree = "<group>";
+		};
+		3061060E1EAA3D6300A04019 /* isEmpty */ = {
+			isa = PBXGroup;
+			children = (
+				3061060B1EAA221900A04019 /* UITextField+isEmpty.h */,
+				3061060C1EAA221900A04019 /* UITextField+isEmpty.m */,
+			);
+			name = isEmpty;
+			sourceTree = "<group>";
+		};
+		3061060F1EAA3D7600A04019 /* makeBorder */ = {
+			isa = PBXGroup;
+			children = (
+				306106221EAB587D00A04019 /* UITextField+makeBorder.h */,
+				306106231EAB587D00A04019 /* UITextField+makeBorder.m */,
+			);
+			name = makeBorder;
+			sourceTree = "<group>";
+		};
+		306106131EAA45DD00A04019 /* CurrentTaskViewController */ = {
+			isa = PBXGroup;
+			children = (
+				306106141EAA460B00A04019 /* CurrentTaskViewController.h */,
+				306106151EAA460B00A04019 /* CurrentTaskViewController.m */,
+			);
+			name = CurrentTaskViewController;
+			sourceTree = "<group>";
+		};
+		306106171EAB2E6000A04019 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				306106251EACACB400A04019 /* CoreDataManager.h */,
+				306106261EACACB400A04019 /* CoreDataManager.m */,
+			);
+			name = Manager;
+			sourceTree = "<group>";
+		};
+		3061061B1EAB3F5A00A04019 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3061061C1EAB3F5B00A04019 /* CoreData.framework */,
+				306106361EACC43000A04019 /* NotificationCenter.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3061061E1EAB56CA00A04019 /* UIColor */ = {
+			isa = PBXGroup;
+			children = (
+				3061061F1EAB56DE00A04019 /* UIColor+MainColor.h */,
+				306106201EAB56DE00A04019 /* UIColor+MainColor.m */,
+			);
+			name = UIColor;
+			sourceTree = "<group>";
+		};
+		306106381EACC43000A04019 /* Task Widget */ = {
+			isa = PBXGroup;
+			children = (
+				306106391EACC43000A04019 /* TodayViewController.h */,
+				3061063A1EACC43000A04019 /* TodayViewController.m */,
+				3061063C1EACC43000A04019 /* MainInterface.storyboard */,
+				3061063F1EACC43000A04019 /* Info.plist */,
+			);
+			path = "Task Widget";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -92,15 +288,34 @@
 				300269071EA8D04C00FB54B4 /* Sources */,
 				300269081EA8D04C00FB54B4 /* Frameworks */,
 				300269091EA8D04C00FB54B4 /* Resources */,
+				306106461EACC43000A04019 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				306106411EACC43000A04019 /* PBXTargetDependency */,
 			);
 			name = MultiTaskTest;
 			productName = MultiTaskTest;
 			productReference = 3002690B1EA8D04C00FB54B4 /* MultiTaskTest.app */;
 			productType = "com.apple.product-type.application";
+		};
+		306106341EACC42F00A04019 /* Task Widget */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 306106431EACC43000A04019 /* Build configuration list for PBXNativeTarget "Task Widget" */;
+			buildPhases = (
+				306106311EACC42F00A04019 /* Sources */,
+				306106321EACC42F00A04019 /* Frameworks */,
+				306106331EACC42F00A04019 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Task Widget";
+			productName = "Task Widget";
+			productReference = 306106351EACC42F00A04019 /* Task Widget.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -113,6 +328,12 @@
 				TargetAttributes = {
 					3002690A1EA8D04C00FB54B4 = {
 						CreatedOnToolsVersion = 8.3.1;
+						DevelopmentTeam = BMHET9ZZ64;
+						ProvisioningStyle = Automatic;
+					};
+					306106341EACC42F00A04019 = {
+						CreatedOnToolsVersion = 8.3.1;
+						DevelopmentTeam = BMHET9ZZ64;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -131,6 +352,7 @@
 			projectRoot = "";
 			targets = (
 				3002690A1EA8D04C00FB54B4 /* MultiTaskTest */,
+				306106341EACC42F00A04019 /* Task Widget */,
 			);
 		};
 /* End PBXProject section */
@@ -146,6 +368,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		306106331EACC42F00A04019 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3061063E1EACC43000A04019 /* MainInterface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -153,14 +383,38 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				306106011EA9FDF600A04019 /* AddTaskViewController.m in Sources */,
 				3002691C1EA8D04C00FB54B4 /* MultiTaskTest.xcdatamodeld in Sources */,
-				300269161EA8D04C00FB54B4 /* ViewController.m in Sources */,
+				3002692B1EA8E1B400FB54B4 /* TaskViewController.m in Sources */,
+				306106211EAB56DE00A04019 /* UIColor+MainColor.m in Sources */,
+				3002692F1EA8F14500FB54B4 /* TaskTableViewCell.m in Sources */,
+				306106161EAA460B00A04019 /* CurrentTaskViewController.m in Sources */,
+				306106271EACACB400A04019 /* CoreDataManager.m in Sources */,
+				306106241EAB587D00A04019 /* UITextField+makeBorder.m in Sources */,
 				300269131EA8D04C00FB54B4 /* AppDelegate.m in Sources */,
+				3061060D1EAA221900A04019 /* UITextField+isEmpty.m in Sources */,
+				300269341EA8F1FB00FB54B4 /* Task.m in Sources */,
 				300269101EA8D04C00FB54B4 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		306106311EACC42F00A04019 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3061063B1EACC43000A04019 /* TodayViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		306106411EACC43000A04019 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 306106341EACC42F00A04019 /* Task Widget */;
+			targetProxy = 306106401EACC43000A04019 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		300269171EA8D04C00FB54B4 /* Main.storyboard */ = {
@@ -177,6 +431,14 @@
 				300269201EA8D04C00FB54B4 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		3061063C1EACC43000A04019 /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3061063D1EACC43000A04019 /* Base */,
+			);
+			name = MainInterface.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -223,7 +485,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -266,7 +528,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -278,7 +540,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = BMHET9ZZ64;
 				INFOPLIST_FILE = MultiTaskTest/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = comp.MultiTaskTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -289,10 +553,38 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = BMHET9ZZ64;
 				INFOPLIST_FILE = MultiTaskTest/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = comp.MultiTaskTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		306106441EACC43000A04019 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = BMHET9ZZ64;
+				INFOPLIST_FILE = "Task Widget/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "comp.MultiTaskTest.Task-Widget";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		306106451EACC43000A04019 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = BMHET9ZZ64;
+				INFOPLIST_FILE = "Task Widget/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "comp.MultiTaskTest.Task-Widget";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
 			};
 			name = Release;
 		};
@@ -313,6 +605,15 @@
 			buildConfigurations = (
 				300269261EA8D04C00FB54B4 /* Debug */,
 				300269271EA8D04C00FB54B4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		306106431EACC43000A04019 /* Build configuration list for PBXNativeTarget "Task Widget" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				306106441EACC43000A04019 /* Debug */,
+				306106451EACC43000A04019 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
