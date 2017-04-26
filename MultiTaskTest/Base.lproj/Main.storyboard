@@ -14,7 +14,7 @@
         <scene sceneID="95j-O4-IVV">
             <objects>
                 <navigationController id="U6X-3d-IaI" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="YDO-eA-K77">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="YDO-eA-K77">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -285,7 +285,7 @@
                                     <constraint firstItem="VL0-5h-Teg" firstAttribute="top" secondItem="Dqw-Hf-MrL" secondAttribute="bottom" constant="36" id="D3m-LN-pK4"/>
                                     <constraint firstItem="aZD-cR-w86" firstAttribute="leading" secondItem="NJw-Fv-azE" secondAttribute="trailing" constant="4" id="DUh-KQ-P1I"/>
                                     <constraint firstItem="VL0-5h-Teg" firstAttribute="trailing" secondItem="azq-RU-s2u" secondAttribute="trailing" id="DXQ-uh-bop"/>
-                                    <constraint firstAttribute="bottom" secondItem="VL0-5h-Teg" secondAttribute="bottom" constant="520" id="IVU-Xr-Qi6"/>
+                                    <constraint firstAttribute="bottom" secondItem="VL0-5h-Teg" secondAttribute="bottom" constant="16" id="IVU-Xr-Qi6"/>
                                     <constraint firstItem="azq-RU-s2u" firstAttribute="leading" secondItem="OxW-RN-w50" secondAttribute="leading" constant="8" id="Ia9-xE-3xD"/>
                                     <constraint firstItem="NJw-Fv-azE" firstAttribute="leading" secondItem="OxW-RN-w50" secondAttribute="leading" constant="8" id="M1N-Ay-gsc"/>
                                     <constraint firstItem="Dqw-Hf-MrL" firstAttribute="top" secondItem="Qca-RG-9Qs" secondAttribute="bottom" constant="8" id="Oh9-ka-Ct7"/>
